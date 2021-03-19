@@ -1,0 +1,120 @@
+:root{
+    --main-bg-color:rgb(48, 48, 48);
+    --main-bg-color-blue:rgb(39, 119, 240);
+    --main-bg-color-white:rgb(255, 255, 255); 
+    --main-bg-color-black:rgb(0, 0, 0); 
+    --main-bg-color-red:rgb(229,57,53);
+    --main-bg-color-green:rgb(67,160,71);
+    --main-font:'Raleway', sans-serif;
+    --main-size-twenty: 20px;
+}
+body {
+    background-Color: var(--main-bg-color);
+}
+
+ol {
+    padding: 0;
+    text-align: left;
+}
+
+#contenedorLista{
+    background-Color:var(--main-bg-color);
+    padding:var(--main-size);
+    text-align: center;
+}
+
+.containerTask{
+    background-Color:var(--main-bg-color-white);
+    padding: 30px;
+    margin: var(--main-size) 15px;
+    font-family: var(--main-font);
+}
+
+.title{
+    color:var(--main-bg-color-white);
+}
+
+.todo_input, .todo_button{
+    border-radius: 5px;
+    border:none;
+    margin: 2px;
+}
+
+.todo_input{
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    color:var(--main-bg-color-black);
+}
+
+#text {
+    outline: none;
+}
+
+#text:hover, #text:focus {
+    border: 1px solid var(--main-bg-color-blue);
+}
+
+.todo_button{
+    background-color:var(--main-bg-color-blue);
+    color:var(--main-bg-color-white);
+    width: var(--main-size-fifty);
+    height: 30px;
+}
+
+.todo_button:focus{
+    outline: none;
+}
+
+#list{
+    list-style:none;
+}
+
+.todo-list  {
+    display: grid;
+    grid-template-columns: 2fr 50px 50px;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: var(--main-bg-color-black);
+}
+
+.check{
+    margin-right: 50px;
+    font-size: var(--main-size);
+}
+
+.delete_btn,.complete_btn{
+    border-radius: 6px;
+    background-color: var(--main-bg-color-red);
+    border:none;
+    color:var(--main-bg-color-white);
+    width: 50px;
+    height: 30px;
+    
+}
+
+.delete_btn:focus,.complete_btn:focus{
+    outline: none;
+}
+
+.complete_btn{
+    background-color: var(--main-bg-color-green);
+}
+
+.delete_btn,.complete_btn{
+    margin-right:10px;
+    margin-top: 10px;
+}
+ 
+.completedItem{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transform: scale(0.96);
+}
+
+
